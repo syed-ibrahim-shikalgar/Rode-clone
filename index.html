@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rode-clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="main">
+        <div class="main1 lg:pb-[3px] lg:border-b-[2px]  hidden lg:justify-around lg:block lg:flex">
+            <div class="lg:flex lg:text-[#464053] lg:mr-[40rem] lg:mt-[5px]">
+                <ion-icon class="text-[25px] " name="location-outline"></ion-icon>
+                <p class="text-[13.5px] lg:mt-[3px] mr-[5px]">EN</p>
+                <ion-icon class="mt-[5px]" name="caret-down-outline"></ion-icon>
+            </div>
+            <div class="text-[#464053]">
+                <ion-icon class="text-[22px] mt-[10px]" name="person-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="main2 flex lg:ml-[13rem] lg:pb-[20px] lg:pt-[20px] lg:mr-[13rem] justify-between">
+            <div class="lg:hidden">
+                <ion-icon class="text-[23px] mt-[7px] ml-[10px]"  name="menu-outline"></ion-icon>
+            </div>
+            <div>
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="hidden mt-[7px] lg:block">
+                <a class="mr-[60px]" href="#">PRODUCTS</a>
+                <a class="mr-[60px]" href="#">USER GUIDES</a>
+                <a class="mr-[60px]" href="#">SOLUTIONS</a>
+                <a class="mr-[60px]" href="#">APPAREL</a>
+                <a class="mr-[60px]" href="#">SUPPORT</a>
+            </div>
+            <div>
+                <ion-icon class="text-[20px] lg:text-[28px] mt-[7px] mr-[10px]" name="search-outline"></ion-icon>
+            </div>
+        </div>
+
+        <header class="bg-[#000] lg:h-screen lg:bg-[url('./images/hero1.png')] lg:bg-center lg:bg-no-repeat lg:bg-cover flex flex-col items-center lg:flex-row lg:justify-end">
+            <!-- Image -->
+            <div class="lg:hidden">
+                <img src="./images/hero.png" alt="hero-image" />
+            </div>
+
+            <!-- Content -->
+            <div class="w-3/4 xl:w-[35rem] 2xl:w-[40rem] p-10 xl:p-20">
+                <img src="./images/streamers.svg" alt="" />
+                <button class="block mx-auto mt-8 bg-[#DC1E34] px-6  py-2 rounded-full text-[#000] sm:text-lg font-semibold uppercase transition duration-200 lg:bg-[#000] lg:text-[#DC1E34] lg:hover:bg-lightBlack">Learn More</button>
+            </div>
+        </header>
+
+        <div class="main3 bg-[#000] lg:h-screen lg:bg-[url('./images/hero2.png')] lg:bg-center lg:bg-no-repeat lg:bg-cover flex flex-col items-center lg:flex-row lg:justify-end ">
+            <div class="lg:hidden">
+                <img src="./images/hero2 sm.png" alt="hero2">
+            </div>
+            <div class="w-[100%] xl:w-[35rem] 2xl:w-[45rem] p-10 xl:p-20 flex flex-col items-center text-center lg:mr-[8rem]">
+                <img class="lg:w-[50rem]" src="./images/RODECasterProII_PL_PI_01.svg" alt="rodecaster">
+                <h1 class="text-[#fff] lg:text-[30px] mt-[30px] mb-[15px] font-[600] text-[25px]">The Revolution Is Here</h1>
+                <p class="text-[#818C8D] lg:text-center lg:text-[18px] text-[15px] w-[95%] text-left">The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level.</p>
+                <div class="flex mt-[30px]">
+                    <div class="text-[#9D9770] cursor-pointer flex mr-[10px] ">
+                        <h1 class="text-[18px] lg:text-[22px]  mt-[5px] font-[500]">Learn More</h1>
+                        <ion-icon class="mt-[9px] lg:text-[24px] lg:mt-[11.5px] text-[19px]" name="chevron-forward-outline"></ion-icon>
+                    </div>
+                    <div class="bg-[#9D9770] hover:bg-[#fff] border-[1px] border-[#9D9770] rounded-full lg:mt-[5px] h-fit w-fit">
+                        <button class="px-[20px] lg:text-[20px] hover:text-[#9D9770] text-[#fff] font-[600] py-[5px]">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main4 bg-[#fff] lg:h-screen lg:bg-[url('./images/hero3.png')] lg:bg-center lg:bg-no-repeat lg:bg-cover flex flex-col items-center lg:flex-row lg:justify-start ">
+            <div class="lg:hidden">
+                <img src="./images/hero3sm.png" alt="hero3">
+            </div>
+            <div class="w-[100%] xl:w-[35rem] 2xl:w-[45rem] p-10 xl:p-20 flex flex-col items-center text-center lg:ml-[6rem]">
+                <img class="lg:w-[50rem]" src="./images/nth-100.svg" alt="nth-100">
+                <h1 class="text-[#000] w-[115%] lg:w-[100%] lg:text-[28px] mt-[30px] mb-[15px] font-[600] text-[25px]">Your Search For The Perfect Headphones Is Over</h1>
+                <p class="text-[#818C8D] lg:text-center lg:text-[18px] w-[115%] lg:w-[100%] text-[17px] w-[95%] text-left">Experience sound like never before with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks that inspires creativity.</p>
+                <div class="flex mt-[30px]">
+                    <div class="text-[#9D9770] cursor-pointer flex mr-[10px] ">
+                        <h1 class="text-[18px] lg:text-[22px]  mt-[5px] font-[500]">Learn More</h1>
+                        <ion-icon class="mt-[9px] lg:text-[24px] lg:mt-[11.5px] text-[19px]" name="chevron-forward-outline"></ion-icon>
+                    </div>
+                    <div class="bg-[#9D9770] hover:bg-[#fff] border-[1px] border-[#9D9770] rounded-full lg:mt-[5px] h-fit w-fit">
+                        <button class="px-[20px] lg:text-[20px] hover:text-[#9D9770] text-[#fff] font-[600] py-[5px]">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main5 bg-[#fff] lg:h-screen lg:bg-[url('./images/hero4.png')] lg:bg-center lg:bg-no-repeat lg:bg-cover flex flex-col items-center lg:flex-row lg:justify-end">
+            <div class="lg:hidden">
+                <img src="./images/hero4sm.png" alt="hero4">
+            </div>
+            <div class="w-[100%] xl:w-[35rem] 2xl:w-[45rem] p-10 xl:p-20 flex flex-col items-center text-center lg:mr-[5rem]">
+                <img class="lg:w-[50rem]" src="./images/nt-usb.svg" alt="nt-usb">
+                <h1 class="text-[#000] w-[115%] lg:w-[100%] lg:text-[28px] mt-[30px] mb-[15px] font-[600] text-[25px]">Studio-Quality Recording, Made Simple</h1>
+                <p class="text-[#818C8D] lg:text-center lg:text-[18px] w-[115%] lg:w-[97%] text-[17px] w-[95%] text-left">The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.</p>
+                <div class="flex mt-[30px]">
+                    <div class="text-[#9D9770] cursor-pointer flex mr-[10px] ">
+                        <h1 class="text-[18px] lg:text-[22px]  mt-[5px] font-[500]">Learn More</h1>
+                        <ion-icon class="mt-[9px] lg:text-[24px] lg:mt-[11.5px] text-[19px]" name="chevron-forward-outline"></ion-icon>
+                    </div>
+                    <div class="bg-[#9D9770] hover:bg-[#fff] border-[1px] border-[#9D9770] rounded-full lg:mt-[5px] h-fit w-fit">
+                        <button class="px-[20px] lg:text-[20px] hover:text-[#9D9770] text-[#fff] font-[600] py-[5px]">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main6 flex lg:mt-[20px] mb-[20px] justify-center">
+            <h1 class="text-[#767676] text-[35px] font-[600]">Explore The RØDE Range</h1>
+        </div>
+
+        <div class="mt-12 lg:px-[10rem] px-[1rem]">
+            <!-- Microphones -->
+            <div class="h-40 md:h-48 lg:h-56 xl:h-64 2xl:h-72 bg-[url('./images/hero5.png')] bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer">
+              <h1 class="text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-semibold text-white uppercase">Microphones</h1>
+            </div>
+        </div>
+
+        <div class="mt-[20px] lg:px-[10rem] px-[1rem]">
+            <!-- INTERFACES & MIXERS -->
+            <div class="h-40 md:h-48 lg:h-56 xl:h-64 2xl:h-72 bg-[url('./images/hero6.png')] bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer">
+              <h1 class="text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-semibold text-white uppercase">INTERFACES & MIXERS</h1>
+            </div>
+        </div>
+
+        <div class="mt-[20px] lg:px-[10rem] px-[1rem]">
+            <!-- SOFTWARE -->
+            <div class="h-40 md:h-48 lg:h-56 xl:h-64 2xl:h-72 bg-[url('./images/hero7.png')] bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer">
+              <h1 class="text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-semibold text-white uppercase">SOFTWARE</h1>
+            </div>
+        </div>
+
+        <div class="mt-[20px] lg:px-[10rem] px-[1rem]">
+            <!-- ACCESSORIES -->
+            <div class="h-40 md:h-48 lg:h-56 xl:h-64 2xl:h-72 bg-[url('./images/hero8.png')] bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer">
+              <h1 class="text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-semibold text-white uppercase">ACCESSORIES</h1>
+            </div>
+        </div>
+
+        <div class="main7 flex lg:mt-[20px] mb-[20px] justify-center">
+            <h1 class="text-[#9D9770] hover:text-[#C0B090] cursor-pointer text-[35px] font-[600]">Latest From The RØDE Blog</h1>
+        </div>
+
+        <div class="main8 lg:flex lg:justify-around lg:pl-[12rem] lg:pr-[12rem] pt-[50px] pb-[20px] bg-[#F8F9FA]">
+            <div class="flex lg:w-1/2 justify-center">
+                <div class=" bg-[#fff] w-[93%] lg:w-[90%] flex flex-col items-center">
+                    <h1 class="font-[500] lg:mt-[10px] lg:mb-[10px] text-[28px] text-center">XLR vs USB Microphones: Which is Best for You?</h1>
+                    <img class="w-full" src="./images/hero9.jpg" alt="hero9">
+                    <p class="mt-[40px] text-center w-[85%] mb-[40px]">We explore the differences between XLR and USB microphones, the advantages of each and which type is best suited to your needs.</p>
+                    <button class="px-[20px] bg-[#9D9770] hover:bg-[#fff] border-[1px] border-[#9D9770] rounded-full lg:mt-[5px] h-fit w-fit lg:text-[20px] hover:text-[#9D9770] text-[#fff] font-[600] py-[5px] mb-[40px]">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="flex lg:w-1/2 mt-[20px] lg:mt-[0] justify-center">
+                <div class=" bg-[#fff] w-[93%] lg:w-[90%] flex flex-col items-center">
+                    <h1 class="font-[500] lg:leading-[2.2rem] text-[28px] text-center">The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphones</h1>
+                    <img class="w-full" src="./images/hero10.jpg" alt="hero10">
+                    <p class="mt-[40px] text-center w-[85%] mb-[40px]">We explore the difference between large- and small-diaphragm condenser microphones, and what each is best used for.</p>
+                    <button class="px-[20px] bg-[#9D9770] hover:bg-[#fff] border-[1px] border-[#9D9770] rounded-full lg:mt-[5px] h-fit w-fit lg:text-[20px] hover:text-[#9D9770] text-[#fff] mb-[40px] font-[600] py-[5px]">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main9 lg:flex lg:justify-around lg:pl-[12rem] lg:pr-[12rem] pb-[20px] bg-[#F8F9FA]">
+            <div class="flex lg:w-1/2 justify-center">
+                <div class=" bg-[#fff] w-[93%] lg:w-[90%] flex flex-col items-center">
+                    <h1 class="font-[500] lg:mt-[10px] lg:mb-[10px] text-[28px] text-center">What is a Condenser Microphone and When to Use One</h1>
+                    <img class="w-full" src="./images/hero11.jpg" alt="hero11">
+                    <p class="mt-[40px] text-center w-[85%] mb-[40px]">Learn more about the different types of condenser mics, how they work and the best applications for using them.</p>
+                    <button class="px-[20px] bg-[#9D9770] hover:bg-[#fff] border-[1px] border-[#9D9770] rounded-full lg:mt-[5px] h-fit w-fit lg:text-[20px] hover:text-[#9D9770] text-[#fff] font-[600] py-[5px] mb-[40px]">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="flex lg:w-1/2 mt-[20px] lg:mt-[0] justify-center">
+                <div class=" bg-[#fff] w-[93%] lg:w-[90%] flex flex-col items-center">
+                    <h1 class="font-[500] lg:mt-[10px] lg:mb-[10px] text-[28px] text-center">Firmware Version 1.0.7 for the RØDECaster Pro II is Available Now</h1>
+                    <img class="w-full" src="./images/hero12.jpg" alt="hero12">
+                    <p class="mt-[40px] text-center w-[85%] mb-[40px]">Firmware version 1.0.7 includes key feature additions, such as custom routing for USB and Bluetooth outputs, and more.</p>
+                    <button class="px-[20px] bg-[#9D9770] hover:bg-[#fff] border-[1px] border-[#9D9770] rounded-full lg:mt-[5px] h-fit w-fit lg:text-[20px] hover:text-[#9D9770] text-[#fff] mb-[40px] font-[600] py-[5px]">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="mt-20 h-[1px] bg-gray-200"></div>
+      
+            <!-- Footer content -->
+                <div class="container mx-auto px-5 md:px-8">
+                    <!-- Top section -->
+                    <div class="py-16 border-b-[1px] border-gray-200 flex flex-col items-center gap-12 xl:flex-row xl:items-start xl:justify-between">
+                        <!-- Logo -->
+                        <img class="lg:ml-[20rem]" src="./images/hero13.svg"alt="logo"/>
+        
+                        <!-- Navigation links -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-14 gap-y-10 xl:gap-x-10">
+                            <ul class="space-y-2.5">
+                                <li class="text-lg font-semibold">Products</li>
+                                <li><a href="#">Microphones</a></li>
+                                <li><a href="#">Headphones</a></li>
+                                <li><a href="#">Interfaces and Mixers</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Software</a></li>
+                                <li><a href="#">Apparel</a></li>
+                            </ul>
+                
+                            <ul class="space-y-2.5">
+                                <li class="text-lg font-semibold">Support</li>
+                                <li><a href="#">Contact RØDE</a></li>
+                                <li><a href="#">Service Centre</a></li>
+                                <li><a href="#">Warranty</a></li>
+                                <li><a href="#">Where to Buy</a></li>
+                            </ul>
+                
+                            <ul class="col-span-2 sm:col-auto space-y-2.5">
+                                <ul class="space-y-2.5">
+                                <li class="text-lg font-semibold">Company</li>
+                                <li><a href="#">About RØDE</a></li>
+                                <li><a href="#">News and Info</a></li>
+                                <li><a href="#">Job Opportunities</a></li>
+                                </ul>
+                
+                                <ul class="space-y-2.5">
+                                <li class="text-lg font-semibold">Account</li>
+                                <li><a href="#">Manage your Account</a></li>
+                                <li><a href="#">Create Account</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+        
+                        <!-- Sign up -->
+                        <div class="xl:w-64 flex flex-col items-center xl:items-end gap-4">
+                            <h2 class="text-2xl font-semibold text-center xl:text-right">Subscribe to our latest news and offers</h2>
+                            <button class="bg-[#9D9770] px-5 py-1.5 border-[1px] border-[#9D9770] rounded-full text-[#fff] font-semibold transition duration-200 hover:bg-[#fff] hover:text-[#9D9770]">Sign Up</button>
+                        </div>
+                    </div>
+        
+                    <!-- Bottom section -->
+                    <div class="py-10 flex flex-col items-center gap-5 xl:flex-row xl:justify-between">
+                        <p class="order-1 xl:order-none">&copy; 2022 RØDE All Rights Reserved.</p>
+                        <div class="flex items-center gap-3">
+                            <a class="text-sm" href="">Privacy Policy</a>
+                            <div class="h-6 w-[1px] bg-gray-500"></div>
+                            <a class="text-sm" href="">Terms & Conditions</a>
+                    </div>
+        
+                        <!-- Social links -->  
+                    <div class="space-x-8 xl:space-x-6">
+                        <a href="#"><i class="text-2xl text-[#9D9770] transition duration-200 hover:scale-125 fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="text-2xl text-[#9D9770] transition duration-200 hover:scale-125 fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="text-2xl text-[#9D9770] transition duration-200 hover:scale-125 fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="text-2xl text-[#9D9770] transition duration-200 hover:scale-125 fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="text-2xl text-[#9D9770] transition duration-200 hover:scale-125 fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
