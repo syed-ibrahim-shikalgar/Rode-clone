@@ -23,4 +23,4 @@
 
 - Learned to make website responsive with Tailwind CSS custom screen size property.
 
-## [Live-link]() of the project
+## [Live-link](https://clone-of-rode.netlify.app/) of the project
